@@ -64,7 +64,8 @@ AND year = 1990),
 
 change
 AS
-(SELECT fa_2016, fa_1990, fa_2016 - fa_1990 change_in_fa, (fa_2016 - fa_1990)/fa_1990 * 100 AS percentage_change
+(SELECT fa_2016, fa_1990, fa_2016 - fa_1990 change_in_fa, 
+(fa_2016 - fa_1990)/fa_1990 * 100 AS percentage_change
 FROM forest_area_2016, forest_area_1990)
         
 SELECT fa_2016, fa_1990, change_in_fa,
